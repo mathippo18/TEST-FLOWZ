@@ -50,10 +50,12 @@ Il a pour but de récupérer les statuts d’un colis via l’API Colissimo de L
    - Le contenu du fichier `statuts.csv`
    - La réception de l’e-mail envoyé selon le statut du colis
 
-## Remarques
+## 💡 Remarques
 
-- Si vous ne pouvez pas créer un compte développeur chez La Poste (particulier), vous pouvez simuler la réponse de l’API en modifiant manuellement la méthode `getTrackingInfo()` dans `ColissimoTracker`.
-- Le code est découpé de façon modulaire pour faciliter les tests, la maintenance et l’évolution du projet.
+- Si vous ne disposez pas d'une clé API Colissimo valide, vous pouvez **simuler la réponse de l'API** en modifiant manuellement la méthode `getTrackingInfo()` dans `ColissimoTracker(API).php`.
+- Le code est découpé de façon **modulaire** afin de faciliter sa lisibilité, son évolution et sa maintenance.
+- La version théorique (`ColissimoTracker(API).php`) est **celle à considérer** comme la version propre du script.
+
 
 ## Réalisé par
 
