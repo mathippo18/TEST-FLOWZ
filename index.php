@@ -14,13 +14,13 @@ $last = end($events);
 $statuts = array_map(fn($e) => [
     'code' => $e['code'],
     'date' => $e['date'],
-    'label' => $e['label'],
+    'message' => $e['message'],
 ], $events);
 
 CSVExporter::export($statuts, 'statuts.csv');
 
-if (strpos(strtolower($last['label']), 'livré') !== false) {
-    Mailer::send('destinataire@example.com', "Colis livré", "Le colis {$trackingNumber} est bien livré.", 'media/works.jpg');
+if (strpos(strtolower($last['message']), 'livré') !== false) {
+    Mailer::send('poinsot.matheo@gmail.com', "Colis livré", "Le colis {$trackingNumber} est bien livré.", 'media/works.jpg');
 } else {
-    Mailer::send('destinataire@example.com', "Colis en cours", "Le colis {$trackingNumber} est encore en cours de livraison.");
+    Mailer::send('poinsot.matheo@gmail.com', "Colis en cours", "Le colis {$trackingNumber} est encore en cours de livraison.");
 }

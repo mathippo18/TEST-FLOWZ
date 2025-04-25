@@ -11,7 +11,7 @@ class CSVExporter
             fputcsv($fp, [
                 $event['code'],
                 $event['date'],
-                $event['label']
+                $event['message']
             ]);
         }
 

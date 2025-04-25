@@ -20,12 +20,12 @@ class ColissimoTracker
                     [
                         "code" => "ARRIVED",
                         "date" => "2025-04-22T14:35:00Z",
-                        "label" => "Colis arrivé à l’agence de distribution"
+                        "message" => "Colis arrivé à l’agence de distribution"
                     ],
                     [
                         "code" => "DELIVERED",
                         "date" => "2025-04-23T09:20:00Z",
-                        "label" => "Colis livré"
+                        "message" => "Colis livré"
                     ]
                 ]
             ]
